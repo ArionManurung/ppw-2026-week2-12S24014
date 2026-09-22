@@ -3,190 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Mahasiswa</title>
-    <!-- Menghubungkan file CSS eksternal -->
+    <title>Portofolio - Arion Dippos Pandapotan Manurung</title>
+    
+    <!-- Bootstrap 5.3 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70">
 
-    <!-- Bagian Header Website -->
-    <header class="header">
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
         <div class="container">
-            <h1>Budi Santoso</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#tentang">Tentang Saya</a></li>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
+            <a class="navbar-brand fw-bold" href="#">Arion<span class="text-primary">.Portofolio</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Konten Utama Website -->
-    <main class="container utama">
-        
-        <!-- Bagian Tentang Saya -->
-        <section id="tentang" class="tentang">
-            <h2>Tentang Saya</h2>
-            <!-- Menggunakan placeholder gambar profil sederhana -->
-            <img src="https://via.placeholder.com/150" alt="Foto Profil Budi" class="foto-profil">
-            
-            <p><strong>Nama:</strong> Budi Santoso</p>
-            <p><strong>NIM:</strong> 123456789</p>
-            <p><strong>Program Studi:</strong> Teknik Informatika</p>
-            <p>Halo! Saya adalah mahasiswa semester 5 yang sedang antusias belajar pemrograman web. Saya suka mencoba hal-hal baru dan sedang mengerjakan tugas praktikum Pengembangan Aplikasi Web.</p>
-            
-            <h3>Keahlian Saat Ini (ul)</h3>
-            <ul>
-                <li>HTML Dasar</li>
-                <li>CSS Dasar</li>
-                <li>Microsoft Office</li>
-            </ul>
+    <!-- Hero Section -->
+    <section id="hero" class="py-5 bg-light">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold mb-3">Halo, Saya Arion Dippos Pandapotan Manurung</h1>
+            <p class="lead text-muted mb-4">Mahasiswa Sistem Informasi yang sedang antusias belajar pemrograman web.</p>
+            <a href="#portofolio" class="btn btn-primary btn-lg px-4 me-md-2 shadow-sm">Lihat Portofolio</a>
+            <a href="#kontak" class="btn btn-outline-secondary btn-lg px-4 shadow-sm">Hubungi Saya</a>
+        </div>
+    </section>
 
-            <h3>Target Belajar Semester Ini (ol)</h3>
-            <ol>
-                <li>Memahami konsep struktur HTML yang baik</li>
-                <li>Mampu membuat tampilan web yang rapi dengan CSS</li>
-                <li>Mempelajari dasar pembuatan formulir</li>
-            </ol>
-        </section>
-
-        <!-- Bagian Aside untuk informasi tambahan -->
-        <aside class="info-samping">
-            <h3>Info Tambahan</h3>
-            <p>Sedang mempelajari HTML dan CSS dasar. Mohon bimbingannya ya!</p>
-        </aside>
-
-        <!-- Bagian Portofolio -->
-        <section id="portofolio" class="portofolio">
-            <h2>Portofolio Tugas</h2>
-            <div class="daftar-proyek">
-                <div class="proyek">
-                    <h3>Tugas Biodata Diri</h3>
-                    <p>Membuat halaman biodata diri sederhana menggunakan HTML dasar tanpa CSS.</p>
+    <!-- Tentang Saya -->
+    <section id="tentang" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="https://ui-avatars.com/api/?name=Arion+Manurung&size=200&background=0d6efd&color=fff" alt="Foto Profil Arion" class="img-fluid rounded-circle shadow">
                 </div>
-                <div class="proyek">
-                    <h3>Tugas Database Kampus</h3>
-                    <p>Merancang struktur tabel sederhana untuk database mahasiswa.</p>
+                <div class="col-md-8">
+                    <h2 class="mb-3 text-primary border-bottom pb-2">Tentang Saya</h2>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent px-0"><strong>Nama:</strong> Arion Dippos Pandapotan Manurung</li>
+                        <li class="list-group-item bg-transparent px-0"><strong>NIM:</strong> 12S24014</li>
+                        <li class="list-group-item bg-transparent px-0"><strong>Program Studi:</strong> Sistem Informasi</li>
+                    </ul>
+                    <p>Halo! Saya adalah mahasiswa yang baru belajar HTML dan CSS selama kurang lebih 3 minggu. Saya sangat bersemangat untuk mengembangkan keterampilan saya di bidang web development. Portofolio ini adalah langkah awal saya menggunakan framework modern seperti Bootstrap 5 yang dipadukan dengan pemahaman CSS murni saya.</p>
                 </div>
             </div>
-            
-            <!-- Tabel Mata Kuliah dengan tag semantik -->
-            <h3>Daftar Mata Kuliah Semester Ini</h3>
-            <table class="tabel-matkul">
-                <caption>Tabel 1. Jadwal Mata Kuliah Semester 5</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Kode</th>
-                        <th scope="col">Nama Mata Kuliah</th>
-                        <th scope="col">SKS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>TI01</td>
-                        <td>Pengembangan Aplikasi Web</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>TI02</td>
-                        <td>Basis Data Lanjut</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>TI03</td>
-                        <td>Rekayasa Perangkat Lunak</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3">Total SKS</td>
-                        <td>9</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+        </div>
+    </section>
 
-        <!-- Bagian Formulir Kontak -->
-        <section id="kontak" class="form-kontak">
-            <h2>Hubungi Saya</h2>
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Formulir Pesan Layanan</legend>
-                    
-                    <div class="grup-input">
-                        <label for="nama">Nama Lengkap:</label>
-                        <input type="text" id="nama" name="nama" required>
-                    </div>
-
-                    <div class="grup-input">
-                        <label for="email">Email Aktif:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="grup-input">
-                        <label for="nohp">Nomor HP:</label>
-                        <input type="tel" id="nohp" name="nohp">
-                    </div>
-
-                    <div class="grup-input">
-                        <label for="umur">Umur (Tahun):</label>
-                        <input type="number" id="umur" name="umur" min="17" max="50">
-                    </div>
-
-                    <div class="grup-input">
-                        <label>Jenis Kelamin:</label>
-                        <div class="pilihan">
-                            <input type="radio" id="pria" name="gender" value="pria" required>
-                            <label for="pria">Pria</label>
-                            
-                            <input type="radio" id="wanita" name="gender" value="wanita" required>
-                            <label for="wanita">Wanita</label>
+    <!-- Portofolio Grid & Modal Dialog -->
+    <section id="portofolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary border-bottom pb-2 d-inline-block">Portofolio Tugas</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+                
+                <!-- Kartu Proyek 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-img-wrapper" style="height: 180px; background-color: #e9ecef; display:flex; align-items:center; justify-content:center;">
+                            <i class="bi bi-filetype-html display-1 text-secondary"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">HTML</span>
+                            <h5 class="card-title">Tugas Biodata Diri</h5>
+                            <p class="card-text">Membuat halaman biodata diri sederhana menggunakan HTML dasar tanpa CSS.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button type="button" class="btn btn-outline-primary w-100 btn-detail" data-bs-toggle="modal" data-bs-target="#modalProyek1">
+                                Detail Proyek
+                            </button>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grup-input">
-                        <label>Minat Belajar:</label>
-                        <div class="pilihan">
-                            <input type="checkbox" id="minat-web" name="minat[]" value="web">
-                            <label for="minat-web">Web Development</label>
-                            
-                            <input type="checkbox" id="minat-data" name="minat[]" value="data">
-                            <label for="minat-data">Data Science</label>
+                <!-- Kartu Proyek 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-img-wrapper" style="height: 180px; background-color: #e9ecef; display:flex; align-items:center; justify-content:center;">
+                            <i class="bi bi-database display-1 text-secondary"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Database</span>
+                            <h5 class="card-title">Tugas Database Kampus</h5>
+                            <p class="card-text">Merancang struktur tabel sederhana untuk database mahasiswa di kampus.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button type="button" class="btn btn-outline-primary w-100 btn-detail" data-bs-toggle="modal" data-bs-target="#modalProyek2">
+                                Detail Proyek
+                            </button>
                         </div>
                     </div>
-
-                    <div class="grup-input">
-                        <label for="kategori">Kategori Pesan:</label>
-                        <select id="kategori" name="kategori">
-                            <option value="tugas">Diskusi Tugas</option>
-                            <option value="proyek">Kerjasama Proyek</option>
-                            <option value="lainnya">Lainnya</option>
-                        </select>
+                </div>
+                
+                <!-- Kartu Proyek 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-img-wrapper" style="height: 180px; background-color: #e9ecef; display:flex; align-items:center; justify-content:center;">
+                            <i class="bi bi-filetype-css display-1 text-secondary"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">CSS</span>
+                            <h5 class="card-title">Styling Komponen CSS</h5>
+                            <p class="card-text">Penerapan CSS murni untuk menghias tombol dan form interaktif.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button type="button" class="btn btn-outline-primary w-100 btn-detail" data-bs-toggle="modal" data-bs-target="#modalProyek3">
+                                Detail Proyek
+                            </button>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="grup-input">
-                        <label for="pesan">Isi Pesan:</label>
-                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                <!-- Kartu Proyek 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-img-wrapper" style="height: 180px; background-color: #e9ecef; display:flex; align-items:center; justify-content:center;">
+                            <i class="bi bi-bootstrap display-1 text-secondary"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Bootstrap 5</span>
+                            <h5 class="card-title">Website Portofolio Modern</h5>
+                            <p class="card-text">Integrasi framework kontemporer untuk website yang responsif dan interaktif.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button type="button" class="btn btn-outline-primary w-100 btn-detail" data-bs-toggle="modal" data-bs-target="#modalProyek4">
+                                Detail Proyek
+                            </button>
+                        </div>
                     </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-                    <button type="submit" class="tombol-kirim">Kirim Pesan</button>
-                </fieldset>
-            </form>
-        </section>
+    <!-- Modals untuk Proyek -->
+    
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="modalProyek1" tabindex="-1" aria-labelledby="modalProyek1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyek1Label"><i class="bi bi-filetype-html me-2 text-primary"></i>Tugas Biodata Diri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Pada tugas ini, saya belajar tentang semantik HTML dasar. Saya menggunakan tag seperti <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, dan tabel untuk menyusun data diri secara terstruktur tanpa sentuhan CSS sedikit pun.</p>
+                    <hr>
+                    <h6>Teknologi yang digunakan:</h6>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>Semantic Elements</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </main>
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="modalProyek2" tabindex="-1" aria-labelledby="modalProyek2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyek2Label"><i class="bi bi-database me-2 text-success"></i>Tugas Database Kampus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyek ini menguji pemahaman awal saya tentang relasi database. Saya merancang entitas Mahasiswa, Dosen, dan Mata Kuliah beserta Primary Key dan Foreign Key mereka.</p>
+                    <hr>
+                    <h6>Teknologi yang digunakan:</h6>
+                    <ul>
+                        <li>ERD Design</li>
+                        <li>SQL Basics</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Proyek 3 -->
+    <div class="modal fade" id="modalProyek3" tabindex="-1" aria-labelledby="modalProyek3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyek3Label"><i class="bi bi-filetype-css me-2 text-info"></i>Styling Komponen CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Berfokus pada pemahaman CSS Selector Spesifisitas dan Custom Properties. Ini adalah batu loncatan saya sebelum beralih ke framework modern seperti Bootstrap.</p>
+                    <hr>
+                    <h6>Teknologi yang digunakan:</h6>
+                    <ul>
+                        <li>CSS3</li>
+                        <li>Flexbox</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Bagian Footer Website -->
-    <footer class="footer">
-        <p>&copy; 2026 Budi Santoso - Mahasiswa</p>
+    <!-- Modal Proyek 4 -->
+    <div class="modal fade" id="modalProyek4" tabindex="-1" aria-labelledby="modalProyek4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyek4Label"><i class="bi bi-bootstrap me-2 text-warning"></i>Website Portofolio Modern</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyek akhir yang membuktikan penguasaan Bootstrap 5. Saya menerapkan Grid 12-kolom responsif, form interaktif dengan floating labels, serta komponen kompleks lainnya.</p>
+                    <hr>
+                    <h6>Teknologi yang digunakan:</h6>
+                    <ul>
+                        <li>Bootstrap 5.3</li>
+                        <li>CSS Custom Overrides</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak & Formulir Modern -->
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary border-bottom pb-2 d-inline-block">Hubungi Saya</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" method="get" class="needs-validation" novalidate>
+                        <div class="card shadow border-0 form-card">
+                            <div class="card-body p-4 p-md-5">
+                                
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingNama" placeholder="Nama Lengkap" required>
+                                            <label for="floatingNama"><i class="bi bi-person me-1"></i> Nama Lengkap</label>
+                                            <div class="invalid-feedback">Silakan masukkan nama Anda.</div>
+                                            <div class="valid-feedback">Terlihat bagus!</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingEmail" placeholder="nama@email.com" required>
+                                            <label for="floatingEmail"><i class="bi bi-envelope me-1"></i> Email Aktif</label>
+                                            <div class="invalid-feedback">Alamat email valid wajib disertakan.</div>
+                                            <div class="valid-feedback">Format email benar.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text bg-white"><i class="bi bi-telephone"></i></span>
+                                    <div class="form-floating flex-grow-1">
+                                        <input type="tel" class="form-control border-start-0" id="floatingPhone" placeholder="Nomor HP">
+                                        <label for="floatingPhone">Nomor HP (Opsional)</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Kategori Pesan" required>
+                                        <option selected disabled value="">Pilih Kategori...</option>
+                                        <option value="tugas">Diskusi Tugas</option>
+                                        <option value="proyek">Kerjasama Proyek</option>
+                                        <option value="lainnya">Lainnya</option>
+                                    </select>
+                                    <label for="floatingSelect"><i class="bi bi-tags me-1"></i> Kategori Pesan</label>
+                                    <div class="invalid-feedback">Pilih salah satu kategori pesan.</div>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control" placeholder="Tulis pesan di sini" id="floatingTextarea" style="height: 120px" required></textarea>
+                                    <label for="floatingTextarea"><i class="bi bi-chat-text me-1"></i> Isi Pesan</label>
+                                    <div class="invalid-feedback">Isi pesan tidak boleh kosong.</div>
+                                </div>
+                                
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label text-muted" for="invalidCheck">
+                                        Saya menyetujui syarat dan ketentuan layanan
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Anda harus menyetujui sebelum mengirim.
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary w-100 py-3 rounded-3 fw-bold" type="submit">Kirim Pesan <i class="bi bi-send ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Arion Dippos Pandapotan Manurung - Sistem Informasi</p>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script untuk Validasi Formulir Bootstrap -->
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 </html>
